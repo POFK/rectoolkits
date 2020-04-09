@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/POFK/rectoolkits.svg?branch=master)](https://travis-ci.com/POFK/rectoolkits)
+
 # rectoolkits
 
 A toolkits for reconstruction models
