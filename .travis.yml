@@ -9,7 +9,11 @@ virtualenv:
 matrix:
   fast_finish: true
   include:
-    - env: DISTRIB="conda" PYTHON_VERSION="3.6" COVERAGE="true"
+    - env: DISTRIB="conda" PYTHON_VERSION="3.7" COVERAGE="true"
+#   - env: DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="false"
+#   - env: DISTRIB="conda" PYTHON_VERSION="3.6" COVERAGE="false"
+#   - env: DISTRIB="conda" PYTHON_VERSION="3.8" COVERAGE="false"
+
 install:
   - source tests/travis_install.sh
   - conda install --file requirements.txt
@@ -30,7 +34,7 @@ script:
 #     pre-commit run --all-files
 #   fi
 after_success:
-  - if [[ "$COVERAGE" == "true" ]]; then codecov; fi
+  - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 after_script:
   - travis-cleanup
 cache:
