@@ -20,6 +20,7 @@ install:
 before_script:
   - git config --global user.email "mtianxiang@gmail.com"
   - git config --global user.name "POFK"
+  - pip install codecov 
 script:
   - python setup.py develop
   - tox
