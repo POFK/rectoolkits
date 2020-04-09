@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/POFK/rectoolkits.svg?branch=master)](https://travis-ci.com/POFK/rectoolkits)
-[![codecov](https://codecov.io/gh/POFK/rectoolkits/branch/master/graph/badge.svg?token=)](https://codecov.io/gh/POFK/rectoolkits)
+[![Coverage Status](https://coveralls.io/repos/github/POFK/rectoolkits/badge.svg?branch=master)](https://coveralls.io/github/POFK/rectoolkits?branch=master)
 
 # rectoolkits
 
